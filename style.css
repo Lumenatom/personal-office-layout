@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body .container {
+  width: 1390px;
+}
+body .container .wraper {
+  background: #F5F5F5;
+}
+body .container .wraper .nav {
+  width: 357px;
+  background-color: #F8F8F8;
+}
+body .container .wraper .nav .icon_logo h2 {
+  font-family: "AvenirNextLTPro-Bold";
+}
+body .container .wraper .nav .icon_logo h2 span {
+  color: blue;
+}
+body .container .wraper .nav .nav_links .link a {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 37px;
+}
+body .container .wraper .nav .nav_links .link a h3 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #16113D;
+  border-bottom: solid #F8F8F8 2px;
+}
+body .container .wraper .nav .nav_links .link a h3:hover {
+  border-bottom: solid #4D49B4 2px;
+}
+body .container .wraper .main_block .header {
+  width: 1080px;
+  height: 62px;
+  background-color: #F8F8F8;
+}
+body .container .wraper .main_block .header .control_panel {
+  height: 62px;
+}
+body .container .wraper .main_block .header .control_panel .go_live_button a {
+  background-color: #4D49B4;
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+}
+body .container .wraper .main_block .header .control_panel .download_terminal_button a h3 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #16113D;
+}
+body .container .wraper .main_block .header .control_panel .support_button a h3 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #16113D;
+}
+body .container .wraper .main_block .header .account_panel .account .profile a h2 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 14px;
+  color: #16113D;
+}
+body .container .wraper .main_block .header .account_panel .account .profile a h4 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8f92a5;
+}
+body .container .wraper .main_block .notification .information {
+  background-color: #F8F8F8;
+  max-width: 568px;
+}
+body .container .wraper .main_block .notification .information h2 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #16113D;
+}
+body .container .wraper .main_block .notification .information p {
+  font-family: "AvenirNextLTPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #8F92A5;
+}
+body .container .wraper .main_block .notification .alerts {
+  background-color: #F8F8F8;
+  width: 451px;
+  position: relative;
+  overflow: hidden;
+}
+body .container .wraper .main_block .notification .alerts h2 {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #16113D;
+}
+body .container .wraper .main_block .notification .alerts p {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #8F92A5;
+  margin-bottom: 10px;
+}
+body .container .wraper .main_block .notification .alerts a {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background-color: #4D49B4;
+  padding: 7.5px 23.5px;
+}
+body .container .wraper .main_block .notification .alerts img {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+body .container .wraper .main_block .graphic {
+  background-color: #F8F8F8;
+  width: 1039px;
+  height: 415px;
+}
+body .container .wraper .main_block .graphic .title_chart select {
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #16113D;
+}
+body .container .wraper .main_block .graphic .chart {
+  height: 300px;
+}
+body .container .wraper .main_block .graphic .chart canvas {
+  height: 300px;
+}
+body .container .wraper .main_block .description {
+  max-width: 1039px;
+}
+body .container .wraper .main_block .description p {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18.5px;
+  color: #8F92A5;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("./fonts/AvenirNextLTPro-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Bold";
+  src: url("./fonts/AvenirNextLTPro-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,98 @@
+-var account = ["Account 1","Account 2","Account 3"];
+
+doctype html 
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Workspace
+    link(rel="stylesheet", href="../style.css")
+    script(src="https://cdn.tailwindcss.com") 
+  body.bg-slate-500.py-12
+    .container.mx-auto
+      .wraper.bg-slate-50.flex
+        .nav.pt-6.pl-10
+          .icon_logo.mb-8
+            a(href="#") 
+              h2.font-black.text-2xl Logo<span>FX</span>
+          .nav_links
+             .link
+              a(href="#")
+                img(src="../img/dashboard.svg", alt="dashboard")
+                h3 Dashboard
+              a(href="#") 
+                img(src="../img/acount.svg", alt="acount")
+                h3 Open Account
+              a(href="#") 
+                img(src="../img/deposite.svg", alt="deposite")
+                h3 Deposit & Withdraw
+              a(href="#") 
+                img(src="../img/tranding.svg", alt="tranding")
+                h3 Trading History
+              a(href="#") 
+                img(src="../img/partner.svg", alt="partner")
+                h3 IB Partnership
+              a(href="#") 
+                img(src="../img/investments.svg", alt="investments")
+                h3 Investments & Fund Mgmt
+        .main_block
+          .header.flex.justify-between.items-center
+            .control_panel.flex.items-center
+              .go_live_button 
+                a(href="#").text-xs.py-3.px-4.ml-9.text-white.rounded-lg.mr-8.
+                  Go Live
+              .download_terminal_button.mr-9
+                a.btn(href="#").flex.gap-2
+                  img(src="../img/download.svg", alt="download")
+                  h3.text-xs Download Terminal
+              .support_button 
+                a(href="#").flex.gap-2
+                  img(src="../img/support.svg", alt="download")
+                  h3.text-xs Support
+            .account_panel.flex.items-center
+              .information.flex.gap-7.mr-7
+                .blackWhiteMode 
+                  a.btn(href="#") 
+                    img(src="../img/mode.svg", alt="mode")
+                .language
+                  a.btn(href="#") 
+                    img(src="../img/flag.svg", alt="language")
+                .notification
+                  a.btn(href="#") 
+                    img(src="../img/notification.svg", alt="notification")
+              .account.flex
+                .custom_photo.flex
+                  a(href="#").mr-2
+                    img(src="../img/custom_photo.svg", alt="photo")
+                .profile
+                a(href="#").mr-7
+                  h2 Artem Zhushman
+                  h4 Retail
+          .notification.flex
+            .information.m-5.p-4.rounded-xl
+              h2.mb-2 Thank you for opening an account with Kenmore Fx
+              p Complete account management at your fingertips: from downloads, electronic deposits and withdrawals, to advanced partnership automation and analytics. Start by downloading our Trading Terminal for your computer and making a deposit.
+            .alerts.my-5.p-4.rounded-xl 
+              h2 ALERTS
+              p Its a good! You don’t have alerts
+              a(href="#").rounded-lg Make a Deposit
+              img(src="./img/warningsvg.svg", alt="warning")
+          .graphic.ml-5.rounded-xl.p-4 
+            .title_chart.flex.justify-between.mb-6
+              h3 Chart of all trades
+              select
+                each value in account
+                  option(value= value)=value
+            .chart 
+              canvas.chart_trades
+          .description.m-5.p-4
+            p.mb-3.
+              Risk Warning Note: Forex and CFDs are leveraged products, incur a high level of risk and may not be suitable for all investors. You should not risk more than you are prepared to lose. Before deciding to trade, please ensure you understand the risks involved and take into account your level of experience. Seek independent advice if necessary.
+            p.
+              © 2020 Copyright KenmoreFX Inc. 2010-2020 All rights reserved. Various trademarks held by their respective owners.
+              One Financial Center, Suite 1000, Boston, MA, 02111, United States
+    script(src="https://cdn.jsdelivr.net/npm/chart.js") 
+    script(src="./index.js") 
+
+    

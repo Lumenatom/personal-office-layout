@@ -1,0 +1,86 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Workspace</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <script src="https://cdn.tailwindcss.com"> </script>
+  </head>
+  <body class="bg-slate-500 py-12">
+    <div class="container mx-auto">
+      <div class="wraper bg-slate-50 flex">
+        <div class="nav pt-6 pl-10">
+          <div class="icon_logo mb-8"><a href="#"> 
+              <h2 class="font-black text-2xl">Logo<span>FX</span></h2></a></div>
+          <div class="nav_links">
+            <div class="link"><a href="#"><img src="../img/dashboard.svg" alt="dashboard"/>
+                <h3>Dashboard</h3></a><a href="#"> <img src="../img/acount.svg" alt="acount"/>
+                <h3>Open Account</h3></a><a href="#"> <img src="../img/deposite.svg" alt="deposite"/>
+                <h3>Deposit & Withdraw</h3></a><a href="#"> <img src="../img/tranding.svg" alt="tranding"/>
+                <h3>Trading History</h3></a><a href="#"> <img src="../img/partner.svg" alt="partner"/>
+                <h3>IB Partnership</h3></a><a href="#"> <img src="../img/investments.svg" alt="investments"/>
+                <h3>Investments & Fund Mgmt</h3></a></div>
+          </div>
+        </div>
+        <div class="main_block">
+          <div class="header flex justify-between items-center">
+            <div class="control_panel flex items-center">
+              <div class="go_live_button"> <a class="text-xs py-3 px-4 ml-9 text-white rounded-lg mr-8" href="#">Go Live</a></div>
+              <div class="download_terminal_button mr-9"><a class="btn flex gap-2" href="#"><img src="../img/download.svg" alt="download"/>
+                  <h3 class="text-xs">Download Terminal</h3></a></div>
+              <div class="support_button"> <a class="flex gap-2" href="#"><img src="../img/support.svg" alt="download"/>
+                  <h3 class="text-xs">Support</h3></a></div>
+            </div>
+            <div class="account_panel flex items-center">
+              <div class="information flex gap-7 mr-7">
+                <div class="blackWhiteMode"> <a class="btn" href="#"> <img src="../img/mode.svg" alt="mode"/></a></div>
+                <div class="language"><a class="btn" href="#"> <img src="../img/flag.svg" alt="language"/></a></div>
+                <div class="notification"><a class="btn" href="#"> <img src="../img/notification.svg" alt="notification"/></a></div>
+              </div>
+              <div class="account flex">
+                <div class="custom_photo flex"><a class="mr-2" href="#"><img src="../img/custom_photo.svg" alt="photo"/></a></div>
+                <div class="profile"></div><a class="mr-7" href="#">
+                  <h2>Artem Zhushman</h2>
+                  <h4>Retail</h4></a>
+              </div>
+            </div>
+          </div>
+          <div class="notification flex">
+            <div class="information m-5 p-4 rounded-xl">
+              <h2 class="mb-2">Thank you for opening an account with Kenmore Fx</h2>
+              <p>Complete account management at your fingertips: from downloads, electronic deposits and withdrawals, to advanced partnership automation and analytics. Start by downloading our Trading Terminal for your computer and making a deposit.</p>
+            </div>
+            <div class="alerts my-5 p-4 rounded-xl"> 
+              <h2>ALERTS</h2>
+              <p>Its a good! You don’t have alerts</p><a class="rounded-lg" href="#">Make a Deposit</a><img src="./img/warningsvg.svg" alt="warning"/>
+            </div>
+          </div>
+          <div class="graphic ml-5 rounded-xl p-4"> 
+            <div class="title_chart flex justify-between mb-6">
+              <h3>Chart of all trades</h3>
+              <select>
+                <option value="Account 1">Account 1</option>
+                <option value="Account 2">Account 2</option>
+                <option value="Account 3">Account 3</option>
+              </select>
+            </div>
+            <div class="chart"> 
+              <canvas class="chart_trades"></canvas>
+            </div>
+          </div>
+          <div class="description m-5 p-4">
+            <p class="mb-3">Risk Warning Note: Forex and CFDs are leveraged products, incur a high level of risk and may not be suitable for all investors. You should not risk more than you are prepared to lose. Before deciding to trade, please ensure you understand the risks involved and take into account your level of experience. Seek independent advice if necessary.</p>
+            <p>
+              © 2020 Copyright KenmoreFX Inc. 2010-2020 All rights reserved. Various trademarks held by their respective owners.
+              One Financial Center, Suite 1000, Boston, MA, 02111, United States
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"> </script>
+    <script src="./index.js"> </script>
+  </body>
+</html>

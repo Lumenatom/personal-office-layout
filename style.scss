@@ -1,0 +1,255 @@
+@import "./resetStyle";
+$fontFamilyRegular: "AvenirNextLTPro-Regular";
+$fontFamilyBold: "AvenirNextLTPro-Bold";
+$colorBlue: #4D49B4;
+$colorDark: #16113D;
+$colorGray: #8F92A5;
+$colorWhiteF8: #F8F8F8;
+$colorWhiteF5: #F5F5F5;
+
+
+body {
+    .container {
+        width: 1390px;
+
+        .wraper {
+            background: $colorWhiteF5;
+
+            .nav {
+                width: 357px;
+                background-color: $colorWhiteF8;
+
+                .icon_logo {
+                    h2 {
+                        font-family: $fontFamilyBold;
+
+                        span {
+                            color: blue;
+                        }
+                    }
+                }
+
+                .nav_links {
+                    .link {
+                        a {
+                            display: flex;
+                            gap: 12px;
+                            margin-bottom: 37px;
+
+                            h3 {
+                                font-family: $fontFamilyRegular;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 19px;
+                                color: $colorDark;
+                                border-bottom: solid $colorWhiteF8 2px;
+
+
+
+                                &:hover {
+                                    border-bottom: solid #4D49B4 2px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_block {
+                .header {
+                    width: 1080px;
+                    height: 62px;
+                    background-color: $colorWhiteF8;
+
+                    .control_panel {
+                        height: 62px;
+
+                        .go_live_button {
+                            a {
+                                background-color: $colorBlue;
+                                font-family: $fontFamilyRegular;
+                                font-weight: 600;
+                            }
+
+                        }
+
+                        .download_terminal_button {
+                            a {
+                                h3 {
+                                    font-family: $fontFamilyRegular;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: $colorDark;
+                                }
+                            }
+                        }
+
+                        .support_button {
+                            a {
+                                h3 {
+                                    font-family: $fontFamilyRegular;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: $colorDark;
+                                }
+                            }
+                        }
+                    }
+
+                    .account_panel {
+                        .account {
+                            .profile {
+                                a {
+                                    h2 {
+                                        font-family: $fontFamilyRegular;
+                                        font-weight: 600;
+                                        font-size: 120px;
+                                        line-height: 14px;
+                                        color: $colorDark;
+                                    }
+
+                                    h4 {
+                                        font-family: $fontFamilyRegular;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: #8f92a5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .notification {
+                    .information {
+                        background-color: $colorWhiteF8;
+                        max-width: 568px;
+
+                        h2 {
+                            font-family: $fontFamilyRegular;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: $colorDark;
+                        }
+
+                        p {
+                            font-family: $fontFamilyRegular;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: #8F92A5;
+                        }
+                    }
+
+                    .alerts {
+                        background-color: $colorWhiteF8;
+                        width: 451px;
+                        position: relative;
+                        overflow: hidden;
+
+                        h2 {
+                            font-family: $fontFamilyRegular;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: $colorDark;
+
+                        }
+
+                        p {
+                            font-family: $fontFamilyRegular;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: #8F92A5;
+                            margin-bottom: 10px;
+
+                        }
+
+                        a {
+                            font-family: $fontFamilyRegular;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: #FFFFFF;
+                            background-color: $colorBlue;
+                            padding: 7.5px 23.5px;
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 0%;
+                            right: 0%;
+                        }
+                    }
+                }
+
+                .graphic {
+                    background-color: $colorWhiteF8;
+                    width: 1039px;
+                    height: 415px;
+
+                    .title_chart {
+                        select {
+                            padding: 8px 16px;
+                            background-color: #FFFFFF;
+                            border-radius: 8px;
+                            font-family: $fontFamilyRegular;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: $colorDark;
+                        }
+                    }
+
+                    .chart {
+                        height: 300px;
+
+                        canvas {
+                            height: 300px;
+                        }
+
+                        .chart_trade {}
+                    }
+                }
+
+                .description {
+                    max-width: 1039px;
+
+                    // background-color: $colorWhiteF8;
+                    p {
+                        font-family: $fontFamilyRegular;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18.5px;
+                        color: #8F92A5;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@font-face {
+    font-family: "AvenirNextLTPro-Regular";
+    src: url("./fonts/AvenirNextLTPro-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AvenirNextLTPro-Bold";
+    src: url("./fonts/AvenirNextLTPro-Bold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
